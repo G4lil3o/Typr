@@ -1,5 +1,6 @@
 import wonderwords
 from wonderwords import RandomWord
+import getpass
 
 text = ""
 
@@ -9,7 +10,7 @@ def toType():
 user_input = ""
 def userInput():
     global user_input
-    user_input = input(">>>")
+    user_input = getpass.getpass(">>>")
 
 def check():
     if user_input == text:
